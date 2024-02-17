@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+	font-size: 2rem;
+	color: white;
+	background-color: #183153;
+}
+
+.main {
+	position: relative;
+	display: flex;
+	align-items: center;
+	font-size: 5rem;
+}
+
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow {
+	position: absolute;
+}
+
+#arrow-up {
+	top: calc(0% - 100px);
+	left: 100%;
+	transform: translateX(-100%);
+}
+
+#arrow-down {
+	top: calc(0% + 100px);
+	left: 100%;
+	transform: translateX(-100%);
+}
+
+#arrow-left {
+	top: 100%;
+	left: calc(0% - 100px);
+	transform: translateY(-100%);
+}
+
+#arrow-right {
+	top: 100%;
+	left: calc(0% + 110px);
+	transform: translateY(-100%);
+}
+
+.keys {
+	display: flex;
+	justify-content: center;
+	margin-top: 10rem;
+}
+
+.rounded-rectangle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	margin: 5px;
+	background-color: white;
+	color: #183153;
+	border-radius: 10px;
+}
+
+/*.rounded-rectangle h4 {
+	padding: 2rem;
+}*/
+
+.key {
+	cursor: pointer;
+	border-radius: 10px;
+	transition: box-shadow 0.3s ease;
+}
+.key:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}

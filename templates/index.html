@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MPV Controller</title>
+        <script
+            src="https://kit.fontawesome.com/9a9de3fb72.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{ url_for('static', filename='styles.css') }}"
+        />
+    </head>
+    <body>
+        <div id="app">
+            <div class="main">
+                <div title="Play/Pause" id="space-bar" class="key circle">
+                    <i class="fa-solid fa-circle-play"></i>
+                </div>
+                <div title="Volume Up" id="arrow-up" class="key arrow">
+                    <i class="fa-solid fa-square-caret-up"></i>
+                </div>
+                <div title="Volume Down" id="arrow-down" class="key arrow">
+                    <i class="fa-solid fa-square-caret-down"></i>
+                </div>
+                <div title="Seek -5" id="arrow-left" class="key arrow">
+                    <i class="fa-solid fa-square-caret-left"></i>
+                </div>
+                <div title="Seek +5" id="arrow-right" class="key arrow">
+                    <i class="fa-solid fa-square-caret-right"></i>
+                </div>
+            </div>
+            <div class="keys">
+                <div title="Tab" id="tab-key" class="key rounded-rectangle">
+                    <h4>⇥</h4>
+                </div>
+                <div
+                    title="Fullscreen"
+                    id="f-key"
+                    class="key rounded-rectangle"
+                >
+                    <h4>F</h4>
+                </div>
+                <div title="Subtitle" id="j-key" class="key rounded-rectangle">
+                    <h4>J</h4>
+                </div>
+                <div title="Enter" id="enter-key" class="key rounded-rectangle">
+                    <h4>↩</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
